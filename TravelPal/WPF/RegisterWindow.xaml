@@ -27,6 +27,7 @@
             </Grid.RowDefinitions>
 
         <Label
+            x:Name="lblRegisterSignUp"
             Content="Sign Up"
             FontSize="40"
             Grid.Row="1"
@@ -36,6 +37,7 @@
             Foreground="White"
             />
         <Label
+            x:Name="lblRegisterUserName"
             Grid.Row="2"
             Grid.Column="2"
             Content="Username"
@@ -43,6 +45,7 @@
             Foreground="White"
             />
         <Label
+            x:Name="lblResgisterPassword"
             Grid.Row="3"
             Grid.Column="2"
             Content="Password"
@@ -50,6 +53,7 @@
             Foreground="White"
             />
         <Label
+            x:Name="RegisterCountry"
             Grid.Row="4"
             Grid.Column="2"
             Content="Country"
@@ -57,19 +61,19 @@
             Foreground="White"
             />
         <TextBox
-            x:Name="txtUsername"
+            x:Name="txtRegisterUsername"
             Grid.Row="2"
             Grid.Column="3"
             Height="30"
             VerticalContentAlignment="Center"/>
         <TextBox
-            x:Name="txtPassword"
+            x:Name="txtRegisterPassword"
             Grid.Row="3"
             Grid.Column="3"
             Height="30"
             VerticalContentAlignment="Center"/>
         <ComboBox
-            x:Name="cmbCountrey"
+            x:Name="cmbRegisterCountrey"
             Grid.Row="4"
             Grid.Column="3"
             Height="30"

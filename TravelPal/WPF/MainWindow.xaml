@@ -26,7 +26,8 @@
         </Grid.RowDefinitions>
 
         <Label
-            Content="Travel Pals"
+            x:Name="lblTravelPal"
+            Content="Travel Pal"
             FontSize="40"
             Grid.Row="1"
             Grid.ColumnSpan="2"
@@ -36,6 +37,7 @@
             FontFamily="Ariel"
             />
         <Label
+            x:Name="lblUserName"
             Grid.Row="2"
             Grid.Column="2"
             Content="Username"
@@ -44,6 +46,7 @@
             Foreground="White"
             />
         <Label
+            x:Name="lblPassword"
             Grid.Row="3"
             Grid.Column="2"
             Content="Password"
@@ -64,6 +67,7 @@
             Height="30"
             VerticalContentAlignment="Center"/>
         <Button
+            x:Name="btnRegister"
             Grid.Row="4"
             Grid.Column="2"
             Content="Register"
@@ -73,6 +77,7 @@
             Margin="10" 
             />
         <Button
+            x:Name="btnSignIn"
             Grid.Row="4"
             Grid.Column="3"
             Content="Sign in"

@@ -25,11 +25,15 @@
         </Grid.RowDefinitions>
 
         <Label
-            Content="Username"
+            x:Name="lblHeaderTravelsYourTravel"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            Content="Your Travel"
             FontFamily="Ariel"
             VerticalAlignment="Center"
             Foreground="White"
-            FontSize="20"
+            FontSize="30"
             Margin="10"
             />
         <Label
@@ -41,24 +45,18 @@
             FontSize="20"
             Margin="0,30,0,0"
             />
-        <Button
-            x:Name="btnUserTravelsWindow"
-            Grid.Column="1"
-            Margin="15"
-            Content="User Details"
-            Background="MintCream"
-            />
+        
         <Button
             x:Name="btnAddTravel"
-            Grid.Column="1"
-            Grid.Row="1"
-            Margin="10,30,10,6"           
+            Grid.Column="2"
+            Grid.Row="2"
+             Margin="15"        
             Content="Add Travel"
             Background="MintCream"
             />
         <Button
             x:Name="btnDetails"
-            Grid.Column="2"
+            Grid.Column="3"
             Grid.Row="2"
             Margin="15"
             Content="Details"
@@ -66,7 +64,7 @@
             />
         <Button
             x:Name="btnRemove"
-            Grid.Column="3"
+            Grid.Column="4"
             Grid.Row="2"
             Margin="15"
             Content="Remove"
@@ -87,7 +85,14 @@
             Content="Sign out"
             Background="MintCream"
             />
-       
+        <Button
+            x:Name="btnUserTravelsWindow"
+            Grid.Column="4"
+            Margin="10,30,10,6"  
+            Content="User Details"
+            Background="MintCream" Grid.Row="5"
+            />
+
 
         <ComboBox  
             x:Name="cmbCountrey"
