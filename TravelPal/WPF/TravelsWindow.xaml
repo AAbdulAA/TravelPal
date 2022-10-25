@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TravelPal"
         mc:Ignorable="d"
-        Title="TravelsWindow" Height="450" Width="800">
+        Title="TravelsWindow" Height="450" Width="550">
+    <!-- Se en detaljerad beskrivning av en resa -->
     <Grid Margin="20" Background="MediumSlateBlue" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -24,6 +25,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <TextBox 
+            x:Name="tbTravelsUserName"
+            Margin="20"
+            Grid.ColumnSpan="2"
+            HorizontalContentAlignment="Left"
+            />
         <Label
             x:Name="lblHeaderTravelsYourTravel"
             Grid.Column="2"
@@ -37,6 +44,7 @@
             Margin="10"
             />
         <Label
+            x:Name="lblTraavelsOverView"
             Grid.Row="1"
             Content="Overview"
             FontFamily="Ariel"
@@ -46,53 +54,45 @@
             Margin="0,30,0,0"
             />
         <Button
-            x:Name="btnAddTravel"
+            x:Name="btnTravelsAddTravel"
             Grid.Column="2"
             Grid.Row="2"
-             Margin="15"        
+             Margin="10,15"        
             Content="Add Travel"
             Background="MintCream"
             />
         <Button
-            x:Name="btnDetails"
+            x:Name="btnTravelsRemove"
             Grid.Column="2"
             Grid.Row="3"
-            Margin="15"
-            Content="Details"
-            Background="MintCream"
-            />
-        <Button
-            x:Name="btnRemove"
-            Grid.Column="2"
-            Grid.Row="4"
-            Margin="15"
+             Margin="10,15"    
             Content="Remove"
             Background="MintCream"
             />
         <Button
-            x:Name="btnAsk"
+            x:Name="btnTravelsInfo"
             Grid.Column="5"
-            Margin="50,20,50,20"
+            Margin="30,20,30,20"
             Content="?"
             Background="MintCream"
             />
         <Button
-            x:Name="btnSignOut"
+            x:Name="btnTravelsSignOut"
             Grid.Column="5"
             Grid.Row="5"
-            Margin="10,30,10,6"           
+            Margin="5,15"           
             Content="Sign out"
             Background="MintCream"
             />
         <Button
-            x:Name="btnUserTravelsWindow"
+            x:Name="btnTravelsUserDetails"
             Grid.Column="4"
-            Margin="10,30,10,6"  
+            Margin="5,15"    
             Content="User Details"
             Background="MintCream" Grid.Row="5"
             />
         <ListView 
-            x:Name="lvCountreyTravels"
+            x:Name="lvTravelsCountrey"
             Grid.Row="2"
             Grid.RowSpan="4"
             Margin="10"

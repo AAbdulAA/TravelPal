@@ -1,6 +1,6 @@
 ﻿namespace TravelPal.Enum
 {
-    internal enum TripType
+    public enum TripTypes
     {
         Leisure,
         Work

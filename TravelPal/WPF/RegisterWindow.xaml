@@ -53,7 +53,7 @@
             Foreground="White"
             />
         <Label
-            x:Name="RegisterCountry"
+            x:Name="lblRegisterCountry"
             Grid.Row="4"
             Grid.Column="2"
             Content="Country"
@@ -79,7 +79,7 @@
             Height="30"
             VerticalContentAlignment="Center"/>
         <Button
-            x:Name="btnRegisterSignUp"
+            x:Name="btnRegisterRegister"
             Grid.Row="5"
             Grid.Column="2"
             Grid.ColumnSpan="2"

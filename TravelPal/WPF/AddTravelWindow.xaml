@@ -6,7 +6,123 @@
         xmlns:local="clr-namespace:TravelPal.WPF"
         mc:Ignorable="d"
         Title="AddTravelWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="20" Background="MediumSlateBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label
+            x:Name="lblAddTravelHeader"
+            Content="Travel details"
+            Grid.Column="2"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            Foreground="White"
+            FontSize="30"
+            />
+        <Label
+            x:Name="lblAddTravelDestination"
+            Grid.Row="2"
+            Content="Destination"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            Grid.ColumnSpan="2"
+            />
+        <Label
+            x:Name="lblAddTravelCountry"
+            Grid.Row="3"
+            Content="Country"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <Label
+            x:Name="lblAddTravelTravelers"
+            Grid.Row="4"
+            Content="Travelers"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <Label
+            x:Name="lblAddTravelTrip"
+            Grid.Row="5"
+            Content="Trip"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <Label
+            x:Name="lblAddTravelTrpType"
+            Grid.Row="6"
+            Content="Trip type"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <CheckBox
+            x:Name="cbAddTravelAllInclusive"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Content="All Inclusive "
+            Foreground="White"
+            />
+        <TextBox 
+            x:Name="tbAddTravelDestination"
+            Grid.Row="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <ComboBox
+            x:Name="cbAddTravelCountry"
+            Grid.Row="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <TextBox 
+            x:Name="tbAddTravelTravelers"
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <TextBox 
+            x:Name="tbAddTravelTrip"
+            Grid.Row="5"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <ComboBox
+            x:Name="cbAddTravelTripType"
+            Grid.Row="6"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <Button
+            x:Name="btnAddTravelExit"
+            Grid.Column="6"
+            Grid.Row="7"
+            Margin="8"
+            Content="Exit"
+            Background="MintCream"
+            />
         
     </Grid>
 </Window>
