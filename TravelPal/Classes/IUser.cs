@@ -9,6 +9,7 @@ namespace TravelPal.Classes
         public Countries Location { get; set; }
 
 
+
         public void IUser(string usernname, string password, Countries location)
         {
 

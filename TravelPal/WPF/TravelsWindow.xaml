@@ -59,7 +59,7 @@
             Grid.Row="2"
              Margin="10,15"        
             Content="Add Travel"
-            Background="MintCream"
+            Background="MintCream" Click="btnTravelsAddTravel_Click"
             />
         <Button
             x:Name="btnTravelsRemove"
@@ -89,7 +89,7 @@
             Grid.Column="4"
             Margin="5,15"    
             Content="User Details"
-            Background="MintCream" Grid.Row="5"
+            Background="MintCream" Grid.Row="5" Click="btnTravelsUserDetails_Click"
             />
         <ListView 
             x:Name="lvTravelsCountrey"

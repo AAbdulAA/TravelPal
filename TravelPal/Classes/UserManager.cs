@@ -15,6 +15,8 @@ namespace TravelPal.Classes
             Users = new List<IUser>();
         }
 
+
+        // Add User 
         public bool AddUser(string username, string password, Countries country)
         {
             if (ValidateUserName(username))
@@ -31,6 +33,7 @@ namespace TravelPal.Classes
             return false;
         }
 
+        // Remove User 
         public bool removeUser(User user)
         {
             if (Users.Any(x => x.Username == user.Username))
@@ -41,8 +44,12 @@ namespace TravelPal.Classes
             return false;
 
         }
-
         private bool ValidateUserName(string username)
+        {
+            return true;
+        }
+
+        public bool UserSignIn(string username, string password)
         {
             return true;
         }

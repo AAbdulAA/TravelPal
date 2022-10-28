@@ -4,6 +4,9 @@ namespace TravelPal.Classes
 {
     public class TravelManager
     {
+
+        // ny lista av Travel som ska användas för att lägga till o ta bort 
+
         List<Travel> travels = new();
 
         public void AddTravel(Travel travel)

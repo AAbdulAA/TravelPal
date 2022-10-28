@@ -55,13 +55,13 @@
             Foreground="White"
             />
         <TextBox
-            x:Name="txtUsername"
+            x:Name="txbUsername"
             Grid.Row="2"
             Grid.Column="3"
             Height="30"
             VerticalContentAlignment="Center"/>
         <PasswordBox
-            x:Name="txtPassword"
+            x:Name="pswPassword"
             Grid.Row="3"
             Grid.Column="3"
             Height="30"
@@ -74,7 +74,9 @@
             FontFamily="Ariel"
             Background="MintCream"
             Height="30"
-            Margin="10" 
+            Margin="10,18,10,0" 
+            VerticalAlignment="Top" 
+            Click="btnRegister_Click" 
             />
         <Button
             x:Name="btnSignIn"
@@ -85,6 +87,7 @@
             Background="MintCream"
             Height="30"
             Margin="10" 
+            Click="btnSignIn_Click" 
             />
     </Grid>
 </Window>
