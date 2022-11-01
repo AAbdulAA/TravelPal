@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TravelPal.Enum;
+using TravelPal.Enums;
 
 namespace TravelPal.Classes
 {
@@ -44,14 +44,23 @@ namespace TravelPal.Classes
             return false;
 
         }
-        private bool ValidateUserName(string username)
-        {
-            return true;
-        }
 
+        // Username och password rätt längd 
+        private bool ValidateUserName(string username, string password)
+        {
+            return username.Length > 20 || username.Length < 3 ? false : true;
+
+        }
+        private bool ValidateUserName(string password)
+        {
+            return password.Length > 20 || password.Length < 3 ? false : true;
+
+        }
         public bool UserSignIn(string username, string password)
         {
             return true;
         }
+
+
     }
 }

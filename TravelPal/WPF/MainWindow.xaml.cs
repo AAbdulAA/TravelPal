@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using TravelPal.Classes;
 
-namespace TravelPal
+namespace TravelPal.WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -15,6 +15,8 @@ namespace TravelPal
         public MainWindow()
         {
             InitializeComponent();
+
+
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
@@ -56,6 +58,7 @@ namespace TravelPal
             {
                 MessageBox.Show("your username or password is incorrect");
             }
+            Close();
         }
     }
 }

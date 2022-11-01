@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using TravelPal.Enums;
 
 namespace TravelPal.WPF
 {
@@ -10,11 +12,11 @@ namespace TravelPal.WPF
         public AddTravelWindow()
         {
             InitializeComponent();
-            //cbAddTravelCountry.ItemsSource = Enum.GetValues(typeof(Countries));
-            //cbAddTravelCountry.SelectedIndex = 0;
+            cbAddTravelCountry.ItemsSource = Enum.GetValues(typeof(Countries));
+            cbAddTravelCountry.SelectedIndex = 0;
 
-            //cbAddTravelTripType.ItemsSource = Enum.GetValues(typeof(TripTypes));
-            //cbAddTravelTripType.SelectedIndex = 0;
+            cbAddTravelTripType.ItemsSource = Enum.GetValues(typeof(TripTypes));
+            cbAddTravelTripType.SelectedIndex = 0;
         }
 
     }

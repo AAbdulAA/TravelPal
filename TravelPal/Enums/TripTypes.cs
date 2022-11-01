@@ -1,4 +1,4 @@
-﻿namespace TravelPal.Enum
+﻿namespace TravelPal.Enums
 {
     public enum TripTypes
     {

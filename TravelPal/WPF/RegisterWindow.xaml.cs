@@ -1,8 +1,9 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using TravelPal.Classes;
-using TravelPal.Enum;
+using TravelPal.Enums;
 
-namespace TravelPal
+namespace TravelPal.WPF
 {
     /// <summary>
     /// Interaction logic for RegisterWindow.xaml
@@ -16,10 +17,13 @@ namespace TravelPal
             InitializeComponent();
 
             _userManager = userManager;
-            //cbCountrey.ItemsSource = Enum.GetValues(typeof(Countries));
-            //cbCountrey.SelectedIndex = 0;   
+            cbCountrey.ItemsSource = Enum.GetValues(typeof(Countries));
+            cbCountrey.SelectedIndex = 0;
+
         }
 
+        // ------------ Lägg till detta ----------------
+        // Om användarnamnet redan är upptaget ska ett varningsmeddelande visas
         private void btnRegisterRegister_Click(object sender, RoutedEventArgs e)
         {
             string username = txtRegisterUsername.Text;

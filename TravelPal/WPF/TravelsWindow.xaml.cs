@@ -1,8 +1,7 @@
 ﻿using System.Windows;
 using TravelPal.Classes;
-using TravelPal.WPF;
 
-namespace TravelPal
+namespace TravelPal.WPF
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
@@ -12,16 +11,14 @@ namespace TravelPal
         private UserManager userManager;
         private User user;
 
-        public TravelsWindow()
-        {
-            InitializeComponent();
-        }
-
         public TravelsWindow(UserManager userManager, User user)
         {
+            InitializeComponent();
             this.userManager = userManager;
             this.user = user;
+            lbTravelsUserName.Content = user.Username;
         }
+
 
         private void btnTravelsUserDetails_Click(object sender, RoutedEventArgs e)
         {
@@ -32,7 +29,8 @@ namespace TravelPal
 
         private void btnTravelsAddTravel_Click(object sender, RoutedEventArgs e)
         {
-
+            Window addTravelWindow = new AddTravelWindow();
+            addTravelWindow.Show();
         }
     }
 }
