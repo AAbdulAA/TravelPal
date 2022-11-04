@@ -8,11 +8,11 @@ namespace TravelPal.Classes
         public string Password { get; set; }
         public Countries Location { get; set; }
 
-        public Admin(string username, string password, Countries location)
-        {
-            Username = username;
-            Password = password;
-            Location = location;
-        }
+        //public Admin(string username, string password, Countries location)
+        //{
+        //    Username = username;
+        //    Password = password;
+        //    Location = location;
+        //}
     }
 }

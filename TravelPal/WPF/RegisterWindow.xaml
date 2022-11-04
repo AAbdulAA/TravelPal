@@ -30,7 +30,6 @@
             x:Name="lblRegisterSignUp"
             Content="Sign Up"
             FontSize="40"
-            Grid.Row="1"
             Grid.ColumnSpan="2"
             Grid.Column="2"
             HorizontalContentAlignment="Center"
@@ -38,7 +37,7 @@
             />
         <Label
             x:Name="lblRegisterUserName"
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="2"
             Content="Username"
             VerticalAlignment="Center"
@@ -46,9 +45,17 @@
             />
         <Label
             x:Name="lblResgisterPassword"
-            Grid.Row="3"
+            Grid.Row="2"
             Grid.Column="2"
             Content="Password"
+            VerticalAlignment="Center"
+            Foreground="White"
+            />
+        <Label
+            x:Name="lblResgisterConfirmPassword"
+            Grid.Row="3"
+            Grid.Column="2"
+            Content="Confirm Password"
             VerticalAlignment="Center"
             Foreground="White"
             />
@@ -62,12 +69,18 @@
             />
         <TextBox
             x:Name="txtRegisterUsername"
+            Grid.Row="1"
+            Grid.Column="3"
+            Height="30"
+            VerticalContentAlignment="Center"/>
+        <PasswordBox
+            x:Name="psbRegisterPassword"
             Grid.Row="2"
             Grid.Column="3"
             Height="30"
             VerticalContentAlignment="Center"/>
-        <TextBox
-            x:Name="txtRegisterPassword"
+        <PasswordBox
+            x:Name="psbRegisterConfirmPassword"
             Grid.Row="3"
             Grid.Column="3"
             Height="30"

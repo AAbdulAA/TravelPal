@@ -54,6 +54,15 @@
             VerticalAlignment="Center"
             Foreground="White"
             />
+        <Label
+            x:Name="lblConfirmPassword"
+            Grid.Row="4"
+            Grid.Column="2"
+            Content=" Confirm Password"
+            FontFamily="Ariel"
+            VerticalAlignment="Center"
+            Foreground="White"
+            />
         <TextBox
             x:Name="txbUsername"
             Grid.Row="2"
@@ -66,9 +75,15 @@
             Grid.Column="3"
             Height="30"
             VerticalContentAlignment="Center"/>
+        <PasswordBox
+            x:Name="pswConfirmPassword"
+            Grid.Row="4"
+            Grid.Column="3"
+            Height="30"
+            VerticalContentAlignment="Center"/>
         <Button
             x:Name="btnRegister"
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="2"
             Content="Register"
             FontFamily="Ariel"
@@ -80,7 +95,7 @@
             />
         <Button
             x:Name="btnSignIn"
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="3"
             Content="Sign in"
             FontFamily="Ariel"

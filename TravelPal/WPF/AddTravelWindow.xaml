@@ -34,7 +34,7 @@
             />
         <Label
             x:Name="lblAddTravelDestination"
-            Grid.Row="2"
+            Grid.Row="1"
             Content="Destination"
             Foreground="White"
             VerticalAlignment="Center"
@@ -43,7 +43,7 @@
             />
         <Label
             x:Name="lblAddTravelCountry"
-            Grid.Row="3"
+            Grid.Row="2"
             Content="Country"
             Foreground="White"
             VerticalAlignment="Center"
@@ -51,16 +51,8 @@
             />
         <Label
             x:Name="lblAddTravelTravelers"
-            Grid.Row="4"
+            Grid.Row="3"
             Content="Travelers"
-            Foreground="White"
-            VerticalAlignment="Center"
-            FontSize="14"
-            />
-        <Label
-            x:Name="lblAddTravelTrip"
-            Grid.Row="5"
-            Content="Trip"
             Foreground="White"
             VerticalAlignment="Center"
             FontSize="14"
@@ -73,37 +65,56 @@
             VerticalAlignment="Center"
             FontSize="14"
             />
+        <Label
+            x:Name="lbAddTravelTravel"
+            Grid.Row="4"
+            Content="Travel"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
         <CheckBox
-            x:Name="cbAddTravelAllInclusive"
-            Grid.Row="1"
+            x:Name="cbxAddTravelAllInclusive"
+            Grid.Row="4"
+            Grid.Column="3"
             Grid.ColumnSpan="2"
+            Margin="10,20,30,20"
             Content="All Inclusive "
             Foreground="White"
             />
         <TextBox 
             x:Name="tbAddTravelDestination"
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="1"
             Grid.ColumnSpan="2"
             Margin="15"
             />
         <ComboBox
             x:Name="cbAddTravelCountry"
-            Grid.Row="3"
+            Grid.Row="2"
             Grid.Column="1"
             Grid.ColumnSpan="2"
             Margin="15"
             />
-        <TextBox 
-            x:Name="tbAddTravelTravelers"
+        <ComboBox
+            x:Name="cbAddTravelTravel"
+            DropDownClosed="cbAddTravel_DropDownClosed"
             Grid.Row="4"
             Grid.Column="1"
             Grid.ColumnSpan="2"
-            Margin="15"
-            />
+            Margin="15">
+            <ComboBoxItem>
+                Vacation
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Trip
+            </ComboBoxItem>
+
+        </ComboBox>
+
         <TextBox 
-            x:Name="tbAddTravelTrip"
-            Grid.Row="5"
+            x:Name="tbAddTravelTravelers"
+            Grid.Row="3"
             Grid.Column="1"
             Grid.ColumnSpan="2"
             Margin="15"
@@ -121,8 +132,17 @@
             Grid.Row="7"
             Margin="8"
             Content="Exit"
-            Background="MintCream"
+            Background="MintCream" Click="btnAddTravelExit_Click"
             />
-        
+        <Button
+            x:Name="btnAddTravelAdd"
+            Grid.Column="4"
+            Grid.Row="6"
+            Margin="8"
+            Content="Save"
+            Background="MintCream" Click="btnAddTravelAdd_Click"
+            />
+
+
     </Grid>
 </Window>

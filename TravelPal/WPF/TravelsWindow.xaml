@@ -27,7 +27,7 @@
 
         <Label 
             x:Name="lbTravelsUserName"
-            Margin="20"
+            Margin="14"
             Grid.ColumnSpan="2"
             HorizontalContentAlignment="Left"
             Foreground="White"
@@ -70,14 +70,22 @@
             Grid.Row="3"
              Margin="10,15"    
             Content="Remove"
-            Background="MintCream"
+            Background="MintCream" Click="btnTravelsRemove_Click"
+            />
+        <Button
+            x:Name="btnTravelsDetails"
+            Grid.Column="3"
+            Grid.Row="4"
+             Margin="10,15"    
+            Content="Details"
+            Background="MintCream" Click="btnTravelsDetails_Click"
             />
         <Button
             x:Name="btnTravelsInfo"
             Grid.Column="5"
             Margin="30,20,30,20"
             Content="?"
-            Background="MintCream"
+            Background="MintCream" Click="btnTravelsInfo_Click"
             />
         <Button
             x:Name="btnTravelsSignOut"
@@ -85,7 +93,7 @@
             Grid.Row="5"
             Margin="5,15"           
             Content="Sign out"
-            Background="MintCream"
+            Background="MintCream" Click="btnTravelsSignOut_Click"
             />
         <Button
             x:Name="btnTravelsUserDetails"
@@ -96,7 +104,7 @@
             Click="btnTravelsUserDetails_Click"
             />
         <ListView 
-            x:Name="lvTravelsCountrey"
+            x:Name="lwTravelsInfo"
             Grid.Row="2"
             Grid.RowSpan="4"
             Margin="10"

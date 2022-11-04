@@ -10,6 +10,7 @@ namespace TravelPal.Classes
             AllInclusive = allInclusive;
         }
 
+        // returnera info 
         public string GetInfo()
         {
             return "dininfo";

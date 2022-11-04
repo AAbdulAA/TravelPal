@@ -11,5 +11,18 @@ namespace TravelPal.Classes
         public Countries Location { get; set; }
 
 
+        public User()
+        {
+
+        }
+
+        public User(string username, string password, Countries locations)
+        {
+            Username = username;
+            Password = password;
+            Location = locations;
+
+            Travels = new();
+        }
     }
 }

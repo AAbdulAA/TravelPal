@@ -10,6 +10,7 @@ namespace TravelPal.Classes
         public Countries Country { get; set; }
         public int Travellers { get; set; }
 
+
         // lägg parametrarna.
         public Travel(string destination, Countries country, int travellers)
         {
@@ -17,9 +18,12 @@ namespace TravelPal.Classes
             Country = country;
             Travellers = travellers;
         }
+
+        // metod för att reeturneradestination
         public virtual string GetInfo()
         {
-            return null;
+
+            return $"{Destination}";
         }
     }
 }

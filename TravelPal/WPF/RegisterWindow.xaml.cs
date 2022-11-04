@@ -10,13 +10,13 @@ namespace TravelPal.WPF
     /// </summary>
     public partial class RegisterWindow : Window
     {
-        private readonly UserManager _userManager;
+        private readonly UserManager userManager;
 
         public RegisterWindow(UserManager userManager)
         {
             InitializeComponent();
 
-            _userManager = userManager;
+            this.userManager = userManager;
             cbCountrey.ItemsSource = Enum.GetValues(typeof(Countries));
             cbCountrey.SelectedIndex = 0;
 
@@ -27,12 +27,20 @@ namespace TravelPal.WPF
         private void btnRegisterRegister_Click(object sender, RoutedEventArgs e)
         {
             string username = txtRegisterUsername.Text;
-            string password = txtRegisterPassword.Text;
+            string password = psbRegisterPassword.Password;
+            string confirmPassword = psbRegisterConfirmPassword.Password;
 
             Countries country = (Countries)cbCountrey.SelectedIndex;
 
-            _userManager.AddUser(username, password, country);
+            this.userManager.AddUser(username, password, confirmPassword, country);
+            if (txtRegisterUsername.Text == "" || psbRegisterPassword.Password == "")
+            {
+                // printa meddalande, kan ej stå tomt 
+                MessageBox.Show("Please fill in all the fields correctly ");
+                return;
+            }
 
+            this.userManager.AddUser(username, password, confirmPassword, country);
             MessageBox.Show("User is added", "Window");
             Close();
         }

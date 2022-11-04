@@ -73,17 +73,20 @@
         <Label
             x:Name="lblTravelDetailsTrpType"
             Grid.Row="6"
-            Content="Trip type"
+            Grid.ColumnSpan="2"
+            Content="Travel type"
             Foreground="White"
             VerticalAlignment="Center"
             FontSize="14"
             />
         <CheckBox
             x:Name="cbTravelDetailsAllInclusive"
-            Grid.Row="1"
+            Grid.Row="5"
+            Grid.Column="3"
             Grid.ColumnSpan="2"
             Content="All Inclusive "
             Foreground="White"
+            Margin="13"
             />
         <TextBox 
             x:Name="tbTravelDetailsDestination"
@@ -126,7 +129,7 @@
             Grid.Row="7"
             Margin="8"
             Content="Exit"
-            Background="MintCream"
+            Background="MintCream" Click="btnTravelDetailsExit_Click"
             />
     </Grid>
 </Window>
